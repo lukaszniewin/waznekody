@@ -2,25 +2,18 @@
 <html>
   <head>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <link href="https://nightly.datatables.net/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
     <script src="https://nightly.datatables.net/js/jquery.dataTables.js"></script>
-    <style>
-        body {
-    font: 90%/1.45em "Helvetica Neue", HelveticaNeue, Verdana, Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #fff;
-  }
-</style>
     <meta charset=utf-8 />
     <title>DataTables - JS Bin</title>
-
-    
   </head>
   <body>
-
+    <script>
+        $(document).ready( function () {
+  var table = $('#example').DataTable();
+} );
+    </script>
     <div class="container">
       <table id="example" class="display nowrap" width="100%">
         <thead>
@@ -30,7 +23,7 @@
             <th>Kod dezaktywacji</th>
             <th>Czas trwania</th>
             <th>Cena</th>
-            <th>Info</th>
+            <th>Inf</th>
           </tr>
         </thead>
 
@@ -494,10 +487,5 @@
         </tbody>
       </table>
     </div>
-    <script>
-        $(document).ready( function () {
-  var table = $('#example').DataTable();
-} );
-    </script>
   </body>
 </html>
